@@ -1,5 +1,5 @@
 # WA_PDA_Check
- This is a bot that checks for availability of driving tests in Western Australia. It searches for driving tests at selected locations and notifies you via a [telegram bot](t.me/PDABookingsBot) message if there is a change in availability. You must have paid the driving test fee for the bot to begin searching for test slots.
+ This is a bot that checks for availability of driving tests in Western Australia. It searches for driving tests at selected locations and notifies you via a [telegram bot](https://t.me/PDABookingsBot) message if there is a change in availability. You must have paid the driving test fee for the bot to begin searching for test slots.
  
  Libraries used: 
  - [Selenium](https://selenium-python.readthedocs.io/installation.html)
