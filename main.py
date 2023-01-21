@@ -9,6 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 import datetime
 import telebot
+from config.definitions import ROOT_DIR
 
 
 class PdaCheckerBot:
@@ -71,8 +72,9 @@ class PdaCheckerBot:
             elif num_slots != count:
                 num_slots = count
                 bot.take_screenshot()
+                screen_path = ROOT_DIR + r"/avail.png"
                 tel_bot.send_photo(receiver_id,
-                                   photo=open(r"/Users/aloysiusloh/PycharmProjects/pdaCheck/avail.png", 'rb'),
+                                   photo=open(screen_path, 'rb'),
                                    caption='Change in available slots.')
 
             sleep(int(interval))
