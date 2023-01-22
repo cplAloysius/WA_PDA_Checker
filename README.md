@@ -25,7 +25,7 @@
       ```
       self.driver.find_element(by=By.XPATH, value='//*[@id="id2-searchBookingContainer:siteList_CAN"]').click()
       ```
- 8. Open terminal/command promt, change directory to the project folder and install the following:
+ 8. Open terminal/command promt, change directory to the project folder and install the following dependencies:
 
       ```
       cd xxx/WA_PDA_Checker
