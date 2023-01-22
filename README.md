@@ -1,5 +1,5 @@
-# WA_PDA_Check
- This is a bot that checks for availability of driving tests in Western Australia. It searches for driving tests at selected locations and notifies you via a [telegram bot](t.me/PDABookingsBot) message if there is a change in availability. You must have paid the driving test fee for the bot to begin searching for test slots.
+# PDA Slots Checker for Western Australia
+ This is a bot that checks for availability of driving tests in Western Australia. It searches for driving tests at selected locations and notifies you via a [telegram bot](https://t.me/PDABookingsBot) message if there is a change in availability. You must have paid the driving test fee for the bot to begin searching for test slots.
  
  Libraries used: 
  - [Selenium](https://selenium-python.readthedocs.io/installation.html)
@@ -19,17 +19,10 @@
        ```
        receiver_id = 999999999
        ```
- 5. Modify code in lines 38, 39, and 40 to suit your desired test location
+ 5. Modify code in lines 38, 39, and 40 to suit your desired driving test locations
 
       ```
       self.driver.find_element(by=By.XPATH, value='//*[@id="id2-searchBookingContainer:siteList_CAN"]').click()
-      ```
- 6. In lines 74 to 76, insert the path where the project is located on your computer
-
-      ```
-      tel_bot.send_photo(receiver_id,
-            photo=open(r"/xxx/xxx/WA_PDA_Checker/avail.png", 'rb'),
-            caption='Change in available slots.')
       ```
  8. Open terminal/command promt, change directory to the project folder and install the following:
 
