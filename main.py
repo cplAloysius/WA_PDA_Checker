@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 import datetime
 import telebot
-from config.definitions import ROOT_DIR
+from config.definitions import *
 
 
 class PdaCheckerBot:
@@ -19,8 +19,8 @@ class PdaCheckerBot:
 
     def setup(self):
         self.driver.get('https://online.transport.wa.gov.au/tso/selfservice/overview.jsf')
-        self.driver.find_element(by=By.XPATH, value='//*[@id="loginForm:userId"]').send_keys('chlollli20')
-        self.driver.find_element(by=By.XPATH, value='//*[@id="loginForm:password"]').send_keys('Myworld0410')
+        self.driver.find_element(by=By.XPATH, value='//*[@id="loginForm:userId"]').send_keys(username)
+        self.driver.find_element(by=By.XPATH, value='//*[@id="loginForm:password"]').send_keys(password)
         self.driver.find_element(by=By.XPATH, value='//*[@id="loginForm:loginButton"]').click()
         WebDriverWait(self.driver, 30).until(EC.presence_of_element_located(
             (By.XPATH, '//*[@id="menuForm:menubar_licence"]'))).click()
