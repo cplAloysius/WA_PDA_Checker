@@ -56,7 +56,7 @@ class PdaCheckerBot:
 
     def refresh(self):
         token = '5765375699:AAFy0l6bvO0xNkzh5GUrUD3LCpt0dtv4KHo'
-        receiver_id = 762166894
+        receiver_id = chat_id
         tel_bot = telebot.TeleBot(token)
 
         num_slots = -1
