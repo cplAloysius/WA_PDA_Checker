@@ -6,18 +6,19 @@
  - [pyTelegramBotAPI](https://pypi.org/project/pyTelegramBotAPI/)
  
  To begin:
- 1. Clone or download this project onto your computer 
- 2. In lines 21 and 22, replace code with your DotDirect username and password
+ 1. Install [python](https://www.python.org)
+ 1. Clone or download this project onto your computer
+ 2. In [/config/definitions.py](https://github.com/cplAloysius/WA_PDA_Checker/blob/main/config/definitions.py), enter your DotDirect username and password accordingly
 
       ```
-      self.driver.find_element(by=By.XPATH, value='//*[@id="loginForm:userId"]').send_keys('my_username')
-      self.driver.find_element(by=By.XPATH, value='//*[@id="loginForm:password"]').send_keys('my_password')
+      username = 'xxx'
+      password = 'xxx'
       ``` 
  3. Get your telegram chat id with [this telegram bot](https://t.me/rawdatabot?start=botostore)
- 4. Replace code in line 58 with your chat id
+ 4. Enter your chat id in [/config/definitions.py](https://github.com/cplAloysius/WA_PDA_Checker/blob/main/config/definitions.py)
 
        ```
-       receiver_id = 999999999
+       chat_id = 999999999
        ```
  5. Modify code in lines 38, 39, and 40 to suit your desired driving test locations
 
